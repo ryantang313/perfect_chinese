@@ -16,8 +16,8 @@ __quote_pattern = re.compile('"(.*)"', re.S)
 
 # 从 PO 文件加载词典
 def load_l10n_dict(popath):
-  l10n_dict_zh_CN = {}
-  l10n_dict = {"zh_CN": l10n_dict_zh_CN}
+  l10n_dict_zh_TW = {}
+  l10n_dict = {"zh_TW": l10n_dict_zh_CN}
   with open(popath, 'r', encoding='utf-8') as file:
     # mode = ('DEFAULT', 'MSGCTXT', 'MSGID' 'MSGSTR')
     mode = 'DEFAULT'
