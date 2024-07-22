@@ -7,8 +7,8 @@ from ..utils import PC_Info
 
 class PC_Translation(Operator, PC_Registrable):
   bl_idname = "perfect_chinese.translation"
-  bl_label = "切换中英文"
-  bl_description = "一键切换中英文"
+  bl_label = "切換中英文"
+  bl_description = "一鍵切換中英文"
 
   def execute(self, context):
     view = context.preferences.view
