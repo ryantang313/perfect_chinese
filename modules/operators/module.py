@@ -9,10 +9,10 @@ from ..config import PC_Config
 
 class PC_ModuleEnable(Operator, PC_Registrable):
   bl_idname = "perfect_chinese.module_enable"
-  bl_label = "注册模组翻译"
+  bl_label = "注冊模組翻譯"
   bl_options = {'INTERNAL'}
 
-  module: StringProperty(name="模组", description="注册翻译的模组名字")
+  module: StringProperty(name="模組", description="注冊翻譯的模組名字")
 
   def execute(self, context):
     PC_LocalizationManager.register_module_and_add_to_list(self.module)
@@ -23,10 +23,10 @@ class PC_ModuleEnable(Operator, PC_Registrable):
 
 class PC_ModuleDisable(Operator, PC_Registrable):
   bl_idname = "perfect_chinese.module_disable"
-  bl_label = "注销模组翻译"
+  bl_label = "注銷模組翻譯"
   bl_options = {'INTERNAL'}
 
-  module: StringProperty(name="模组", description="注销翻译模组的名字")
+  module: StringProperty(name="模組", description="注銷翻譯模組的名字")
 
   def execute(self, context):
     PC_LocalizationManager.unregister_module_and_remove_from_list(self.module)
@@ -37,7 +37,7 @@ class PC_ModuleDisable(Operator, PC_Registrable):
 class PC_ModuleRefresh(Operator, PC_Registrable):
   bl_idname = "perfect_chinese.module_refresh"
   bl_label = "刷新"
-  bl_description = "刷新本地模块列表"
+  bl_description = "刷新本地模塊列表"
   bl_options = {'INTERNAL'}
 
   def execute(self, context):
@@ -47,7 +47,7 @@ class PC_ModuleRefresh(Operator, PC_Registrable):
 
 class PC_UpdateGlobalModule(Operator, PC_Registrable):
   bl_idname = "perfect_chinese.update_global_module"
-  bl_label = "更新全局翻译"
+  bl_label = "更新全局翻譯"
   bl_options = {'INTERNAL'}
 
   def execute(self, context):
