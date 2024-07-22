@@ -12,8 +12,8 @@ class PC_Translation(Operator, PC_Registrable):
 
   def execute(self, context):
     view = context.preferences.view
-    if translations.locale != 'zh_CN':
-      view.language = 'zh_CN'
+    if translations.locale != 'zh_TW':
+      view.language = 'zh_TW'
       view.use_translate_tooltips = False
       view.use_translate_interface = False
       view.use_translate_new_dataname = False
