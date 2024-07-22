@@ -11,7 +11,7 @@ from ..utils import PC_Info
 class PC_Header(Header, PC_Registrable):
   bl_idname = "CHINESE_HT_HEADER_PC_TranslationButton"
   bl_space_type = "TOPBAR"
-  bl_label = "翻译按钮"
+  bl_label = "翻譯按鈕"
 
   @classmethod
   def pc_register(cls):
