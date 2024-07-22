@@ -6,7 +6,7 @@
 #  of the License, or (at your option) any later version.
 #
 #  This program is distributed in the hope that it will be useful,
-#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  but WITHOUT ANY WARRANTY; without even the implied WARRANTY of
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU General Public License for more details.
 #
@@ -1450,8 +1450,6 @@ def register(bl_info):
     # Apply annotations to remove Blender 2.8+ warnings, no effect on 2.7
     make_annotations(cls)
     # Comment out this line if using bpy.utils.register_module(__name__)
-    bpy.utils.register_class(cls)
-    
     try:
     bpy.utils.register_class(cls)
 except ValueError:
